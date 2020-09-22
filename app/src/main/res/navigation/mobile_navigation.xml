@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_upcomingmatches"
         android:name="com.example.livecricketscore.ui.upcomingmatches.UpcomingmatchesFragment"
         android:label="@string/title_upcomingmatches"
         tools:layout="@layout/fragment_upcomingmatches" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_category"
         android:name="com.example.livecricketscore.ui.category.CategoryFragment"
         android:label="@string/title_category"
         tools:layout="@layout/fragment_category" />

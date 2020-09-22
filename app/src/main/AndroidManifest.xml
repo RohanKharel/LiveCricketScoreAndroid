@@ -20,9 +20,10 @@
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegisterActivity" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.BottomNavActivity"
             android:label="@string/app_name"></activity>
-            <activity android:name=".SplashActivity">
+
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

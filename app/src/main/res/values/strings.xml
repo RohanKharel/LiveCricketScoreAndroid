@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">LiveCricketScore</string>
+    <string name="title_activity_bottam_nav">BottamNavActivity</string>
     <string name="title_home">Home</string>
     <string name="title_upcomingmatches">Upcoming Matches</string>
     <string name="title_category">Category</string>
     <string name="title_search">Search</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
 </resources>
