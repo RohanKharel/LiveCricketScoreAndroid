@@ -12,11 +12,10 @@
         android:layout_height="match_parent">
 
 
-        <EditText
-            android:id="@+id/editText12"
-            android:layout_width="match_parent"
-            android:layout_height="99dp"
-            android:background=" #9999ff"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="408dp"
+            android:layout_height="157dp"
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName"
@@ -25,93 +24,91 @@
             android:textSize="27sp"
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.452"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="408dp"
-            android:layout_height="213dp"
-
-            android:orientation="vertical"
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:inputType="textPersonName"
+            android:text="Regular and Quick Updates"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText12" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:inputType="textPersonName"
+            android:text="Regular and Quick Updates"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="75dp"
-            android:layout_height="54dp"
-            app:layout_constraintStart_toStartOf="@+id/editText12"
+            android:id="@+id/imageView"
+            android:layout_width="98dp"
+            android:layout_height="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/cricket" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="175dp"
-            android:layout_marginLeft="175dp"
-            android:layout_marginTop="64dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginRight="100dp"
-            android:text="Quick and Regular Updates"
-            android:textSize="24sp"
-            android:textStyle="bold|italic"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="406dp"
+            android:layout_height="336dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.788"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+
 
         <TextView
             android:id="@+id/txtFeedback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginTop="60dp"
-            android:text="Add feedback"
-            android:textColorHint="#000000"
-            android:textSize="15sp"
-            android:textStyle="bold"
+            android:layout_width="240dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Feedback"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
         <EditText
             android:id="@+id/etFeedback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginTop="30dp"
-            android:textColorHint="#000000"
-            android:textSize="15sp"
+            android:layout_width="178dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Give Feedback"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtFeedback" />
 
         <Button
             android:id="@+id/btnFeedback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginTop="16dp"
-            android:text="Add feedback"
-            android:textColorHint="#000000"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etFeedback" />
+            android:layout_width="91dp"
+            android:layout_height="35dp"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/btnLogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Logout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </ScrollView>
 

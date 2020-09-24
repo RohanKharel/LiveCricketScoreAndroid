@@ -36,7 +36,6 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private ImageView imageView, imageView3;
     private TextView txtFeedback;
     private EditText etFeedback;
     private Button btnFeedback,btnLogout;
@@ -84,8 +83,7 @@ public class HomeFragment extends Fragment {
         });
 
 
-        imageView = root.findViewById(R.id.imageView);
-        imageView3 = root.findViewById(R.id.imageView3);
+
 
 
 

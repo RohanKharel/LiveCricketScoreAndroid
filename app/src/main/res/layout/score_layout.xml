@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -8,145 +8,123 @@
     android:layout_margin="10dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="376dp"
-        android:layout_height="244dp"
-        android:layout_margin="5dp"
-        android:background="#6be585">
+        android:id="@+id/cardViewSearch"
+        android:layout_width="408dp"
+        android:layout_height="179dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="376dp"
-            android:layout_height="244dp"
-            android:layout_gravity="center"
-            android:layout_margin="15dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginRight="0dp"
-            android:background="#3333ff"
-            app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="73dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="40dp"
+            <TextView
+                android:id="@+id/txtMatchDetails"
+                android:layout_width="339dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="MatchDetails"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtType"
-                app:srcCompat="@drawable/nepal" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/txtCountry1"
-                android:layout_width="61dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="45dp"
+                android:layout_width="116dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="21dp"
                 android:text="Country1"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toBottomOf="@+id/txtType" />
-
-            <TextView
-                android:id="@+id/txtRun1"
-                android:layout_width="61dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="45dp"
-                android:text="Run1"
-                app:layout_constraintStart_toEndOf="@+id/txtCountry1"
-                app:layout_constraintTop_toBottomOf="@+id/txtType" />
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
 
             <TextView
                 android:id="@+id/txtCountry2"
-                android:layout_width="61dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="35dp"
+                android:layout_width="119dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="22dp"
                 android:text="Country2"
-                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtCountry1" />
 
             <TextView
+                android:id="@+id/txtRun1"
+                android:layout_width="80dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="25dp"
+                android:text="Run1"
+                app:layout_constraintStart_toEndOf="@+id/txtCountry1"
+                app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
+
+            <TextView
+                android:id="@+id/txtOver1"
+                android:layout_width="80dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="27dp"
+                android:text="over1"
+                app:layout_constraintStart_toEndOf="@+id/txtRun1"
+                app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
+
+            <TextView
                 android:id="@+id/txtRun2"
-                android:layout_width="61dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="35dp"
-                android:text="Run2"
+                android:layout_width="80dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="15dp"
+                android:text="run2"
                 app:layout_constraintStart_toEndOf="@+id/txtCountry2"
                 app:layout_constraintTop_toBottomOf="@+id/txtRun1" />
 
             <TextView
-                android:id="@+id/txtOver1"
-                android:layout_width="61dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="45dp"
-                android:text="Over1"
-                app:layout_constraintStart_toEndOf="@+id/txtRun1"
-                app:layout_constraintTop_toBottomOf="@+id/txtType" />
-
-            <TextView
                 android:id="@+id/txtOver2"
-                android:layout_width="61dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="35dp"
+                android:layout_width="80dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="13dp"
                 android:text="Over2"
                 app:layout_constraintStart_toEndOf="@+id/txtRun2"
                 app:layout_constraintTop_toBottomOf="@+id/txtOver1" />
 
             <TextView
-                android:id="@+id/txtTarget"
-                android:layout_width="61dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="60dp"
+                android:id="@+id/textTarget"
+                android:layout_width="167dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="27dp"
                 android:text="Target"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
-                android:id="@+id/txtType"
-                android:layout_width="286dp"
-                android:layout_height="29dp"
-                android:layout_marginTop="8dp"
-                android:text="Type"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txtResult"
-                android:layout_width="261dp"
-                android:layout_height="31dp"
+                android:id="@+id/textResult"
+                android:layout_width="217dp"
+                android:layout_height="23dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="2dp"
                 android:text="Result"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="73dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                app:srcCompat="@drawable/nepal" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.cardview.widget.CardView>
 
 
 
-   </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
