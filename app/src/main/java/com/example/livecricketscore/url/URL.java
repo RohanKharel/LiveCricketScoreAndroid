@@ -7,6 +7,8 @@ public class URL {
 
     private final static String BASE_URL = "http://10.0.2.2:3011/";
 
+    public static String image_url = URL.BASE_URL+ "uploads/";
+
 
 
     public static String token = "Bearer ";
