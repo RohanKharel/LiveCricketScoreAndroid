@@ -1,6 +1,7 @@
 package com.example.livecricketscore.api;
 
 import com.example.livecricketscore.model.Details;
+import com.example.livecricketscore.model.PlayerDetails;
 import com.example.livecricketscore.model.UpcomingDetails;
 import com.example.livecricketscore.model.User;
 import com.example.livecricketscore.model.UserUpdate;
@@ -40,6 +41,9 @@ public interface LiveCricketScoreAPI {
 
     @PUT("userUpdate")
     Call<Void> updateUser(@Header("Authorization") String token, @Body UserUpdate userUpdate);
+
+    @GET("getPlayerprofile")
+    Call<List<PlayerDetails>> getPlayerDetailsList();
 
     @GET("getUser")
     Call<UserUpdate> showUser(@Header("Authorization") String token);
