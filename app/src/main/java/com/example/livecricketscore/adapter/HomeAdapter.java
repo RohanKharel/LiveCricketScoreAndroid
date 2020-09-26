@@ -86,8 +86,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.DetailsViewHol
 
                 imageView = itemView.findViewById(R.id.imageView);
 
-                txtCountry1 = itemView.findViewById(R.id.txtCountry1);
-                txtCountry2 = itemView.findViewById(R.id.txtCountry2);
+                txtCountry1 = itemView.findViewById(R.id.txtName);
+                txtCountry2 = itemView.findViewById(R.id.txtOdirun);
                 txtRun1 = itemView.findViewById(R.id.txtRun1);
                 txtRun2 = itemView.findViewById(R.id.txtRun2);
                 txtOver1 = itemView.findViewById(R.id.txtOver1);

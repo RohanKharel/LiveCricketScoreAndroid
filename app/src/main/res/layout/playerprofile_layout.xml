@@ -1,72 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
-    tools:context=".ui.searchFragment.SearchFragment">
-
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="410dp"
-        android:layout_height="157dp"
-        android:background="#aeb0fd"
-        android:gravity="center"
-        android:ems="10"
-        android:text="Live Cricket Score"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="86dp"
-        android:layout_height="63dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:src="@drawable/cricket"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Regular and Quick Updates"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/etSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Search Player"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/btnSearch"
-        android:layout_width="154dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="3dp"
-        android:text="Search"
-        app:layout_constraintStart_toEndOf="@+id/etSearch"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSearch"
@@ -188,19 +127,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="354dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="Players Profile"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSearch" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

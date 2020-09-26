@@ -1,4 +1,4 @@
-package com.example.livecricketscore.ui.category;
+package com.example.livecricketscore.ui.playerprofile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

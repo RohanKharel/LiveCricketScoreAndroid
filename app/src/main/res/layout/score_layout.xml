@@ -33,7 +33,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/txtCountry1"
+                android:id="@+id/txtName"
                 android:layout_width="116dp"
                 android:layout_height="27dp"
                 android:layout_marginStart="16dp"
@@ -45,7 +45,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
 
             <TextView
-                android:id="@+id/txtCountry2"
+                android:id="@+id/txtOdirun"
                 android:layout_width="119dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="16dp"
@@ -54,7 +54,7 @@
                 android:text="Country2"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCountry1" />
+                app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
             <TextView
                 android:id="@+id/txtRun1"
@@ -64,7 +64,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="25dp"
                 android:text="Run1"
-                app:layout_constraintStart_toEndOf="@+id/txtCountry1"
+                app:layout_constraintStart_toEndOf="@+id/txtName"
                 app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
 
             <TextView
@@ -86,7 +86,7 @@
                 android:layout_marginLeft="21dp"
                 android:layout_marginTop="15dp"
                 android:text="run2"
-                app:layout_constraintStart_toEndOf="@+id/txtCountry2"
+                app:layout_constraintStart_toEndOf="@+id/txtOdirun"
                 app:layout_constraintTop_toBottomOf="@+id/txtRun1" />
 
             <TextView

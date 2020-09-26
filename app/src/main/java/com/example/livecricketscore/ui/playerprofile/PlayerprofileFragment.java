@@ -1,20 +1,17 @@
-package com.example.livecricketscore.ui.category;
+package com.example.livecricketscore.ui.playerprofile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.livecricketscore.R;
 
-public class CategoryFragment extends Fragment {
+public class PlayerprofileFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
 
@@ -22,7 +19,7 @@ public class CategoryFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
                 ViewModelProviders.of(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_category, container, false);
+        View root = inflater.inflate(R.layout.fragment_playerprofile, container, false);
 
 
         return root;

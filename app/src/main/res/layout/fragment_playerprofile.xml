@@ -68,37 +68,9 @@
             android:id="@+id/recyclerView"
             android:layout_width="406dp"
             android:layout_height="336dp"
+            android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnTest" />
-
-        <Button
-            android:id="@+id/btnOdi"
-            android:layout_width="127dp"
-            android:layout_height="63dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="16dp"
-            android:text="ODI"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-        <Button
-            android:id="@+id/btnTest"
-            android:layout_width="127dp"
-            android:layout_height="63dp"
-            android:layout_marginTop="16dp"
-            android:text="TEST"
-            app:layout_constraintStart_toEndOf="@+id/btnOdi"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-        <Button
-            android:id="@+id/btnT20"
-            android:layout_width="127dp"
-            android:layout_height="63dp"
-            android:layout_marginTop="16dp"
-            android:text="T20"
-            app:layout_constraintStart_toEndOf="@+id/btnTest"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
@@ -107,7 +79,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="9dp"
             android:gravity="center"
-            android:text="Match Categories"
+            android:text="Players Profile"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

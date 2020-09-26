@@ -12,9 +12,9 @@
         android:title="@string/title_upcomingmatches" />
 
     <item
-        android:id="@+id/navigation_category"
+        android:id="@+id/navigation_playerprofile"
         android:icon="@drawable/ic_dehaze_black_24dp"
-        android:title="@string/title_category" />
+        android:title="@string/title_playerprofile" />
 
     <item
         android:id="@+id/navigation_search"

@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_upcomingmatches" />
 
     <fragment
-        android:id="@+id/navigation_category"
-        android:name="com.example.livecricketscore.ui.category.CategoryFragment"
-        android:label="@string/title_category"
-        tools:layout="@layout/fragment_category" />
+        android:id="@+id/navigation_playerprofile"
+        android:name="com.example.livecricketscore.ui.playerprofile.PlayerprofileFragment"
+        android:label="@string/title_playerprofile"
+        tools:layout="@layout/fragment_playerprofile" />
 
     <fragment
         android:id="@+id/navigation_search"
