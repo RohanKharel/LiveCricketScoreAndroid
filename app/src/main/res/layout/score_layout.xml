@@ -82,8 +82,8 @@
                 android:id="@+id/txtRun2"
                 android:layout_width="80dp"
                 android:layout_height="27dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
                 android:layout_marginTop="15dp"
                 android:text="run2"
                 app:layout_constraintStart_toEndOf="@+id/txtCountry2"
@@ -101,17 +101,19 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtOver1" />
 
             <TextView
-                android:id="@+id/textTarget"
-                android:layout_width="167dp"
-                android:layout_height="22dp"
-                android:layout_marginBottom="27dp"
+                android:id="@+id/txtTarget"
+                android:layout_width="162dp"
+                android:layout_height="31dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="16dp"
                 android:text="Target"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
-                android:id="@+id/textResult"
+                android:id="@+id/txtStartdetail"
                 android:layout_width="217dp"
                 android:layout_height="23dp"
                 android:layout_marginStart="16dp"

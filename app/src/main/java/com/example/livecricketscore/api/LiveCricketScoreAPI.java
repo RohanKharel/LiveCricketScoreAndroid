@@ -1,7 +1,9 @@
 package com.example.livecricketscore.api;
 
 import com.example.livecricketscore.model.Details;
+import com.example.livecricketscore.model.UpcomingDetails;
 import com.example.livecricketscore.model.User;
+import com.example.livecricketscore.model.UserUpdate;
 import com.example.livecricketscore.serverresponse.SignUpResponse;
 
 
@@ -14,6 +16,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 
 
 public interface LiveCricketScoreAPI {
@@ -28,9 +31,18 @@ public interface LiveCricketScoreAPI {
     @GET("getScore")
     Call<List<Details>> getScoreList();
 
+    @GET("getUpcomingmatches")
+    Call<List<UpcomingDetails>> getUpcomingmatchesList();
+
     @FormUrlEncoded
     @POST("addFeedback")
     Call<Void> addFeedback(@Field("comment") String comment, @Header("Authorization")String token);
+
+    @PUT("userUpdate")
+    Call<Void> updateUser(@Header("Authorization") String token, @Body UserUpdate userUpdate);
+
+    @GET("getUser")
+    Call<UserUpdate> showUser(@Header("Authorization") String token);
 
 
 

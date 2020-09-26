@@ -11,13 +11,11 @@ public class Details {
     String over1;
     String over2;
     String target;
-    String type;
+    String matchdetails;
     String result;
-    String Image1;
-    String Image2;
     int id;
 
-    public Details(String country1, String country2, String run1, String run2, String over1, String over2, String target, String type, String result, String image1, String image2, int id) {
+    public Details(String country1, String country2, String run1, String run2, String over1, String over2, String target, String matchdetails, String result, int id) {
         this.country1 = country1;
         this.country2 = country2;
         this.run1 = run1;
@@ -25,10 +23,8 @@ public class Details {
         this.over1 = over1;
         this.over2 = over2;
         this.target = target;
-        this.type = type;
+        this.matchdetails = matchdetails;
         this.result = result;
-        Image1 = image1;
-        Image2 = image2;
         this.id = id;
     }
 
@@ -88,12 +84,12 @@ public class Details {
         this.target = target;
     }
 
-    public String getType() {
-        return type;
+    public String getMatchdetails() {
+        return matchdetails;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setMatchdetails(String matchdetails) {
+        this.matchdetails = matchdetails;
     }
 
     public String getResult() {
@@ -102,22 +98,6 @@ public class Details {
 
     public void setResult(String result) {
         this.result = result;
-    }
-
-    public String getImage1() {
-        return Image1;
-    }
-
-    public void setImage1(String image1) {
-        Image1 = image1;
-    }
-
-    public String getImage2() {
-        return Image2;
-    }
-
-    public void setImage2(String image2) {
-        Image2 = image2;
     }
 
     public int getId() {

@@ -1,13 +1,10 @@
 package com.example.livecricketscore.adapter;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.os.Bundle;
-import android.telecom.Call;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,16 +15,12 @@ import com.example.livecricketscore.R;
 import com.example.livecricketscore.api.LiveCricketScoreAPI;
 import com.example.livecricketscore.model.Details;
 import com.example.livecricketscore.url.URL;
-import com.squareup.picasso.Picasso;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.DetailsViewHolder> {
 
-    public static String image1;
-    public static String image2;
+
     public static String country1;
     public static String country2;
     public static String run1;
@@ -35,7 +28,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.DetailsViewHol
     public static String over1;
     public static String over2;
     public static String target;
-    public static String type;
+    public static String matchdetails;
     public static String result;
 
     Context context;
@@ -68,15 +61,15 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.DetailsViewHol
         holder.txtOver1.setText(Details.getOver1());
         holder.txtOver2.setText( Details.getOver2());
         holder.txtTarget.setText(Details.getTarget());
-        holder.txtType.setText( Details.getType());
+        holder.txtMatchDetails.setText( Details.getMatchdetails());
         holder.txtResult.setText(Details.getResult());
 
 
 
-        Picasso.get().load(URL.image_url + Details.getImage1() + Details.getImage2())
-                .centerCrop()
-                .resize(500, 500)
-                .into(holder.imageView);
+//        Picasso.get().load(URL.image_url + Details)
+//                .centerCrop()
+//                .resize(500, 500)
+//                .into(holder.imageView);
 
 
     }
@@ -85,14 +78,14 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.DetailsViewHol
     public int getItemCount()  { return DetailsList.size();}
         public class DetailsViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView imageView, imageView3;
-        TextView txtCountry1, txtCountry2, txtRun1, txtRun2, txtOver1, txtOver2, txtTarget, txtType, txtResult;
+        ImageView imageView;
+        TextView txtCountry1, txtCountry2, txtRun1, txtRun2, txtOver1, txtOver2, txtTarget, txtMatchDetails, txtResult;
 
             public DetailsViewHolder(@NonNull View itemView) {
                 super(itemView);
 
                 imageView = itemView.findViewById(R.id.imageView);
-                imageView3 = imageView.findViewById(R.id.imageView3);
+
                 txtCountry1 = itemView.findViewById(R.id.txtCountry1);
                 txtCountry2 = itemView.findViewById(R.id.txtCountry2);
                 txtRun1 = itemView.findViewById(R.id.txtRun1);
@@ -100,8 +93,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.DetailsViewHol
                 txtOver1 = itemView.findViewById(R.id.txtOver1);
                 txtOver2 = itemView.findViewById(R.id.txtOver2);
                 txtTarget = itemView.findViewById(R.id.txtTarget);
-                txtType = itemView.findViewById(R.id.txtType);
-                txtResult = itemView.findViewById(R.id.txtResult);
+                txtMatchDetails = itemView.findViewById(R.id.txtMatchDetails);
+                txtResult = itemView.findViewById(R.id.txtStartdetail);
 
             }
         }
