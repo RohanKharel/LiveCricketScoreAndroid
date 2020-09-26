@@ -18,6 +18,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
+import retrofit2.http.Path;
 
 
 public interface LiveCricketScoreAPI {
@@ -44,6 +45,9 @@ public interface LiveCricketScoreAPI {
 
     @GET("getPlayerprofile")
     Call<List<PlayerDetails>> getPlayerDetailsList();
+
+    @GET("searchPlayerprofile/{name}")
+    Call<PlayerDetails> searchPlayerprofile(@Path("name") String name);
 
     @GET("getUser")
     Call<UserUpdate> showUser(@Header("Authorization") String token);
