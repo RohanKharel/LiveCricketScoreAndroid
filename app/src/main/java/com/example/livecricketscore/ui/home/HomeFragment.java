@@ -1,5 +1,10 @@
 package com.example.livecricketscore.ui.home;
 
+import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,10 +38,13 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static android.content.Context.SENSOR_SERVICE;
+
 public class HomeFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private TextView txtFeedback;
+    private SensorManager sensorManager;
     private EditText etFeedback;
     private Button btnFeedback,btnLogout;
 
@@ -56,6 +64,7 @@ public class HomeFragment extends Fragment {
         recyclerView = root.findViewById(R.id.recyclerView);
         txtFeedback = root.findViewById(R.id.txtFeedback);
         etFeedback = root.findViewById(R.id.etFeedback);
+        proximity();
         btnFeedback = root.findViewById(R.id.btnFeedback);
         final LiveCricketScoreAPI liveCricketScoreAPI = URL.getInstance().create(LiveCricketScoreAPI.class);
         btnFeedback.setOnClickListener(new View.OnClickListener() {
@@ -116,4 +125,32 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
+    private void proximity() {
+        sensorManager = (SensorManager) getActivity().getSystemService(SENSOR_SERVICE);
+        Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        SensorEventListener proxilistener = new SensorEventListener() {
+            @Override
+            public void onSensorChanged(SensorEvent event) {
+                if (event.values[0] == 0) {
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.addCategory(Intent.CATEGORY_HOME);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+            }
+        };
+        if (sensor != null) {
+            sensorManager.registerListener(proxilistener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+        } else {
+            Toast.makeText(getContext(), "sensor not found", Toast.LENGTH_SHORT).show();
+        }
+    }
 }
+
+
