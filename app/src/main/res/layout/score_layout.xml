@@ -11,6 +11,7 @@
         android:id="@+id/cardViewSearch"
         android:layout_width="408dp"
         android:layout_height="179dp"
+        android:background="#b8d6fd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etSearch">
@@ -18,12 +19,13 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#b8d6fd"
             android:layout_gravity="center">
 
             <TextView
                 android:id="@+id/txtMatchDetails"
                 android:layout_width="339dp"
-                android:layout_height="22dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="8dp"
@@ -50,7 +52,7 @@
                 android:layout_height="24dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="20dp"
                 android:text="Country2"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +64,8 @@
                 android:layout_height="27dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginLeft="24dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="22dp"
+                android:textSize="18sp"
                 android:text="Run1"
                 app:layout_constraintStart_toEndOf="@+id/txtName"
                 app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
@@ -73,8 +76,9 @@
                 android:layout_height="27dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginLeft="24dp"
-                android:layout_marginTop="27dp"
+                android:layout_marginTop="22dp"
                 android:text="over1"
+                android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/txtRun1"
                 app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
 
@@ -84,7 +88,8 @@
                 android:layout_height="27dp"
                 android:layout_marginStart="21dp"
                 android:layout_marginLeft="21dp"
-                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:layout_marginTop="18dp"
                 android:text="run2"
                 app:layout_constraintStart_toEndOf="@+id/txtOdirun"
                 app:layout_constraintTop_toBottomOf="@+id/txtRun1" />
@@ -95,8 +100,9 @@
                 android:layout_height="27dp"
                 android:layout_marginStart="21dp"
                 android:layout_marginLeft="21dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="15dp"
                 android:text="Over2"
+                android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/txtRun2"
                 app:layout_constraintTop_toBottomOf="@+id/txtOver1" />
 
@@ -106,7 +112,7 @@
                 android:layout_height="31dp"
                 android:layout_marginEnd="4dp"
                 android:layout_marginRight="4dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="14dp"
                 android:text="Target"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -120,7 +126,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginBottom="2dp"
                 android:text="Result"
-                android:textSize="15sp"
+                android:textColor="#f6546a"
+                android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 

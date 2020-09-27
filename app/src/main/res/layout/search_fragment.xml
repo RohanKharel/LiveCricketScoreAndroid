@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="#dbd4bb"
     tools:context=".ui.searchFragment.SearchFragment">
 
 
@@ -74,12 +75,14 @@
         android:layout_height="342dp"
         android:layout_marginTop="8dp"
         android:visibility="invisible"
+        android:background="#dbd4bb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:background="#dbd4bb"
             android:layout_height="match_parent">
 
             <TextView
@@ -175,17 +178,17 @@
             <TextView
                 android:id="@+id/txtWickets"
                 android:layout_width="319dp"
-                android:layout_height="36dp"
+                android:layout_height="82dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="17dp"
                 android:layout_marginEnd="59dp"
                 android:layout_marginRight="59dp"
-                android:visibility="invisible"
                 android:gravity="center"
                 android:text="Wickets"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.666"
                 app:layout_constraintStart_toStartOf="parent"
