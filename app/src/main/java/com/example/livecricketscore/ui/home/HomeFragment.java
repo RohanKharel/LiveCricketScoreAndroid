@@ -26,12 +26,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.livecricketscore.R;
+import com.example.livecricketscore.activity.LoginActivity;
 import com.example.livecricketscore.adapter.HomeAdapter;
 import com.example.livecricketscore.api.LiveCricketScoreAPI;
 import com.example.livecricketscore.model.Details;
 import com.example.livecricketscore.url.URL;
 
 
+import java.io.File;
 import java.util.List;
 
 import retrofit2.Call;
@@ -59,6 +61,25 @@ public class HomeFragment extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
+
+        btnLogout = root.findViewById(R.id.btnLogout);
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                File sharedPreferenceFile = new File("/data/data/" + getActivity().getPackageName() + "/shared_prefs/");
+                File[] listFiles = sharedPreferenceFile.listFiles();
+                for (File file : listFiles) {
+                    file.delete();
+                }
+                URL.token = "Bearer ";
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+                getActivity().finish();
+
+            }
+        });
 
 
         recyclerView = root.findViewById(R.id.recyclerView);

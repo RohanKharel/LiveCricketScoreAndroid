@@ -9,18 +9,18 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSearch"
-        android:layout_width="408dp"
-        android:layout_height="179dp"
-        android:background="#b8d6fd"
+        android:layout_width="428dp"
+        android:layout_height="252dp"
+        android:background="#ecf8fd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSearch">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#b8d6fd"
-            android:layout_gravity="center">
+            android:layout_width="369dp"
+            android:layout_height="201dp"
+            android:layout_gravity="center"
+            android:background="#ecf8fd">
 
             <TextView
                 android:id="@+id/txtMatchDetails"
@@ -30,6 +30,8 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="8dp"
                 android:text="MatchDetails"
+                android:textStyle="bold"
+                android:textColor="#740001"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -42,6 +44,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="21dp"
                 android:text="Country1"
+                android:textStyle="bold"
+                android:textColor="#740001"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
@@ -54,6 +58,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:text="Country2"
+                android:textColor="#740001"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtName" />
@@ -65,8 +71,10 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="22dp"
-                android:textSize="18sp"
                 android:text="Run1"
+                android:textColor="#740001"
+                android:textStyle="bold"
+                android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/txtName"
                 app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
 
@@ -78,6 +86,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="22dp"
                 android:text="over1"
+                android:textColor="#740001"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/txtRun1"
                 app:layout_constraintTop_toBottomOf="@+id/txtMatchDetails" />
@@ -88,9 +98,11 @@
                 android:layout_height="27dp"
                 android:layout_marginStart="21dp"
                 android:layout_marginLeft="21dp"
-                android:textSize="18sp"
                 android:layout_marginTop="18dp"
                 android:text="run2"
+                android:textStyle="bold"
+                android:textColor="#740001"
+                android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/txtOdirun"
                 app:layout_constraintTop_toBottomOf="@+id/txtRun1" />
 
@@ -102,6 +114,8 @@
                 android:layout_marginLeft="21dp"
                 android:layout_marginTop="15dp"
                 android:text="Over2"
+                android:textColor="#740001"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/txtRun2"
                 app:layout_constraintTop_toBottomOf="@+id/txtOver1" />
@@ -114,6 +128,8 @@
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="14dp"
                 android:text="Target"
+                android:textColor="#740001"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
@@ -126,7 +142,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginBottom="2dp"
                 android:text="Result"
-                android:textColor="#f6546a"
+                android:textColor="#740001"
+                android:textStyle="bold"
                 android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
